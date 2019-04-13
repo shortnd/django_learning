@@ -23,10 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '33v^$x2ew#0sspy8^m(45jf#)7yb0a_=#!d+rh!+#n15ikwb-@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = False
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['shortnd-learning-log.herokuapp.com']
 
 
 # Application definition
@@ -152,7 +151,7 @@ if os.getcwd() == '/app':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Allow all host headers
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['shortnd-learning-log.herokuapp.com']
 
     import django_heroku
     django_heroku.settings(locals())
